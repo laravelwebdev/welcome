@@ -8,7 +8,7 @@
 
             <p v-if="card.description" class="leading-tight mt-3" v-html="card.description"/>
 
-            <Card :class="{ 'mt-8': card.title || card.description }">
+            <Card v-if"card.items.length > 0" :class="{ 'mt-8': card.title || card.description }">
 
                 <div class="md:grid md:grid-cols-2">
 
